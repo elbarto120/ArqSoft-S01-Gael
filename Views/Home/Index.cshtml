@@ -1,8 +1,34 @@
-﻿<div class="text-center d-flex align-items-center justify-content-center" style="height: 80vh; flex-direction: column;">
-    <h1 style="font-family: 'Shojumaru'; font-size: 4rem; text-shadow: 0 0 20px var(--demon-blood);">KIMETSU ARCHIVE</h1>
-    <p class="mb-5">BIENVENIDO AL REGISTRO DE CAZADORES Y DEMONIOS</p>
-    
-    <a asp-controller="Catalogo" asp-action="Index" class="btn-hero" style="text-decoration: none;">
-        [ INGRESAR ]
-    </a>
+﻿@{
+    ViewData["Title"] = "Página de Inicio";
+}
+
+<div class="background-container">
+    <video autoplay muted loop playsinline>
+        <source src="~/videos/llamas.mp4" type="video/mp4">
+    </video>
 </div>
+
+<div class="container py-5 text-center" style="position: relative; z-index: 1;">
+    <div class="mb-5 d-flex justify-content-center">
+        <img src="~/Imagenes/logos/LOGO-removebg-preview.png" alt="Demon Slayer Logo" class="img-fluid" style="max-height: 250px; width: auto;">
+    </div>
+    <div class="d-flex justify-content-center my-5">
+        <div class="kimetsu-banner">
+            <h2 class="kimetsu-text">
+                Bienvenido al Registro de Cazadores y Demonios
+            </h2>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <a asp-controller="Catalogo" asp-action="Index" class="btn-kimetsu">
+            [ INGRESAR ]
+        </a>
+    </div>
+</div>
+
+<style>
+    body {
+        background: transparent !important;
+    }
+</style>

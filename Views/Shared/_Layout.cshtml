@@ -10,18 +10,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shojumaru&display=swap" />
 
     <style>
-        /* Aseguramos que las variables de color funcionen en el Layout */
         :root {
             --slayer-gold: #d4af37;
             --demon-blood: #8b0000;
         }
         .navbar-brand:hover { color: white !important; }
         .nav-link:hover { color: var(--slayer-gold) !important; }
+        
+        /* Ajuste para que la navbar no tape el video */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+            backdrop-filter: blur(5px);
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+        }
     </style>
 </head>
-<body style="background-color: #050505; color: white;">
+<body class="bg-transparent">
+
+    <div class="background-container">
+        <video autoplay muted loop playsinline>
+           <source src="~/llamas.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-black border-bottom border-warning shadow-lg mb-3">
+        <nav class="navbar navbar-expand-sm navbar-dark border-bottom border-warning shadow-lg mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="font-family: 'Shojumaru'; color: var(--slayer-gold);">
                     KIMETSU_DB
@@ -35,11 +50,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
-                        @* Link corregido al controlador Catalogo *@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Catalogo" asp-action="Index">Ver Personajes</a>
                         </li>
-                        @* Link corregido para agregar nuevos personajes *@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Catalogo" asp-action="Agregar">Inscribir</a>
                         </li>
@@ -56,7 +69,7 @@
         </main>
     </div>
 
-    <footer class="footer text-muted border-top border-secondary bg-black mt-5">
+    <footer class="footer text-muted border-top border-secondary mt-5">
         <div class="container text-center py-3">
             &copy; 2026 - <span style="color: var(--slayer-gold);">KIMETSU ARCHIVE</span> -
             <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none text-danger">Protocolo de Privacidad</a>
