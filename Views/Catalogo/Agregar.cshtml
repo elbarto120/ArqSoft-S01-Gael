@@ -1,0 +1,50 @@
+﻿@model Catalogo2.Models.Personaje
+@{
+    ViewData["Title"] = "Inscribir Nuevo Guerrero";
+}
+
+<div class="container mt-5" style="max-width: 700px;">
+    <div class="card p-4 shadow-lg" style="background: rgba(15, 15, 15, 0.95); border: 1px solid var(--slayer-gold); color: white;">
+        <h2 class="text-center mb-4" style="font-family: 'Shojumaru'; color: var(--slayer-gold);">NUEVO INGRESO AL REGISTRO</h2>
+        
+        <form asp-action="Agregar" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input asp-for="Nombre" class="form-control bg-dark text-white border-secondary" placeholder="Ej: Zenitsu Agatsuma">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Rango</label>
+                    <input asp-for="Rango" class="form-control bg-dark text-white border-secondary" placeholder="Ej: Pilar del Rayo">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Habilidad / Técnica de Sangre</label>
+                <input asp-for="Habilidad" class="form-control bg-dark text-white border-secondary" placeholder="Ej: Respiración del Rayo">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Naturaleza</label>
+                <select asp-for="EsDemonio" class="form-select bg-dark text-white border-secondary">
+                    <option value="false">Humano (Cazador)</option>
+                    <option value="true">Demonio (Luna Superior)</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre del archivo de imagen</label>
+                <input asp-for="ImagenUrl" class="form-control bg-dark text-white border-secondary" placeholder="ejemplo.jpg">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Descripción / Biografía</label>
+                <textarea asp-for="Descripcion" class="form-control bg-dark text-white border-secondary" rows="4"></textarea>
+            </div>
+
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn-hero" style="font-size: 1.2rem;">[ CONFIRMAR INSCRIPCIÓN ]</button>
+            </div>
+        </form>
+    </div>
+</div>

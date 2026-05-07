@@ -1,0 +1,41 @@
+﻿@model Catalogo2.Models.Personaje
+@{
+    ViewData["Title"] = "Ficha de " + Model.Nombre;
+}
+
+<div class="container mt-5">
+    <div class="card" style="background: rgba(10, 10, 10, 0.9); border: 2px solid var(--slayer-gold); border-radius: 0; overflow: hidden;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                @* RUTA CORREGIDA: Agregamos ~/Imagenes/personajes/ *@
+                <img src="~/Imagenes/personajes/@Model.ImagenUrl" class="img-fluid" alt="@Model.Nombre"
+                     style="height: 100%; min-height: 400px; object-fit: cover; border-right: 2px solid var(--slayer-gold);"
+                     asp-append-version="true">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body p-5">
+                    <h1 style="font-family: 'Shojumaru'; color: var(--slayer-gold); font-size: 3rem; text-shadow: 2px 2px #000;">@Model.Nombre</h1>
+                    
+                    <span class="badge @(Model.EsDemonio ? "bg-danger" : "bg-primary") px-3 py-2 mb-4" style="font-family: 'Shojumaru'; font-size: 0.8rem;">
+                        @(Model.EsDemonio ? "DEMONIO / LUNA" : "CAZADOR")
+                    </span>
+                    
+                    <div class="info-box mt-2" style="color: #eee; font-size: 1.1rem;">
+                        <p><strong><span style="color: var(--slayer-gold);">RANGO:</span></strong> @Model.Rango</p>
+                        <p><strong><span style="color: var(--slayer-gold);">HABILIDAD:</span></strong> @Model.Habilidad</p>
+                        <hr class="border-secondary">
+                        <h4 style="font-family: 'Shojumaru'; color: var(--slayer-gold); font-size: 1rem;">HISTORIA</h4>
+                        <p style="line-height: 1.8; text-align: justify;">@Model.Descripcion</p>
+                    </div>
+
+                    <div class="mt-5">
+                        @* ACCIÓN CORREGIDA: Cambiamos "Catalogo" por "Index" *@
+                        <a asp-controller="Catalogo" asp-action="Index" class="btn-hero" style="text-decoration: none;">
+                            [ VOLVER AL ARCHIVO ]
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

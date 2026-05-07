@@ -1,0 +1,77 @@
+/* Importamos fuentes japonesas y de estilo anime */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shojumaru&display=swap');
+
+:root {
+    --demon-blood: #8b0000; /* Rojo sangre oscuro */
+    --slayer-gold: #d4af37; /* Dorado de katana */
+    --pilar-blue: #0047ab; /* Azul profundo */
+    --dark-bg: #050505; /* Negro casi puro */
+}
+
+body {
+    /* Fondo con un degradado que simula una noche profunda */
+    background: radial-gradient(circle, #1a0a0a 0%, #050505 100%) !important;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #e0e0e0;
+    margin-bottom: 60px;
+}
+
+/* Estilo para los títulos (Efecto Kimetsu) */
+.hero-title, h1, h2, .navbar-brand {
+    font-family: 'Shojumaru', cursive !important;
+    color: var(--slayer-gold) !important;
+    text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+/* Tarjetas de Personajes (Cards) */
+.card-character {
+    background: rgba(20, 20, 20, 0.85) !important;
+    border: 1px solid var(--slayer-gold) !important;
+    border-radius: 0px !important; /* Estilo tradicional cuadrado */
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+    .card-character:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px var(--demon-blood);
+        border-color: var(--demon-blood) !important;
+    }
+
+/* Ajuste de imágenes para que no se deformen */
+.char-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--slayer-gold);
+    transition: 0.5s;
+}
+
+.card-character:hover .char-img {
+    filter: brightness(1.2);
+}
+
+/* Botones con estilo de pergamino o Katana */
+.btn-hero {
+    border: 2px solid var(--slayer-gold);
+    color: var(--slayer-gold);
+    background: transparent;
+    font-family: 'Shojumaru', cursive;
+    padding: 10px 25px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .btn-hero:hover {
+        background: var(--slayer-gold);
+        color: #000;
+        box-shadow: 0 0 15px var(--slayer-gold);
+    }
+
+/* Navbar oscura */
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid var(--demon-blood);
+}
