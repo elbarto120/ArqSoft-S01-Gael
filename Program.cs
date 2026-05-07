@@ -34,9 +34,10 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
-app.MapControllerRoute(
+
+   app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Catalogo}/{action=Index}/{id?}")  // ← SOLO ESTO CAMBIA
+    pattern: "{controller=Home}/{action=Index}/{id?}") // Ahora inicia en Home
     .WithStaticAssets();
 
 app.MapRazorPages()
