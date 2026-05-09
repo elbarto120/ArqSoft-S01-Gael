@@ -1,7 +1,7 @@
 ⚔️ KIMETSU ARCHIVE — Registro de Cazadores y Demonios
 Aplicación web temática de Demon Slayer: Kimetsu no Yaiba desarrollada en ASP.NET Core MVC. Permite registrar, visualizar y consultar el detalle de personajes del universo Kimetsu, clasificándolos entre Cazadores y Demonios.
 
-🖼️ Capturas de pantalla
+Capturas de pantalla
 Página de Inicio
 <img width="1917" height="1078" alt="Inicio" src="https://github.com/user-attachments/assets/176e56f2-fab6-4cc8-82cb-711a2f3e789b" />
 
@@ -44,18 +44,8 @@ Abre tu navegador en https://localhost:<puerto>.
 
 
 📁 Estructura del proyecto
-Catalogo2/
-├── Controllers/        # Lógica de cada vista
-├── Models/             # Clases del dominio (Personaje)
-├── Views/              # Vistas Razor (.cshtml)
-│   ├── Catalogo/
-│   └── Shared/
-├── wwwroot/            # Archivos estáticos
-│   ├── Imagenes/personajes/
-│   ├── videos/
-│   └── css/
-├── .gitignore
-└── Catalogo2.csproj
+<img width="352" height="380" alt="image" src="https://github.com/user-attachments/assets/20264cfc-5564-4a47-9da0-5107d19572d9" />
+
 
 👤 Autor
 Gael — Proyecto desarrollado para el curso de Arquitectura de Software.
