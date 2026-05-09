@@ -9,10 +9,10 @@ Registro de Personajes
 <img width="1918" height="1078" alt="Catalogo2" src="https://github.com/user-attachments/assets/78bfaeac-adc8-4f20-9f4c-9d1eed2abb24" />
 Detalle de Personaje
 <img width="1912" height="1062" alt="Detalle1" src="https://github.com/user-attachments/assets/77c6df44-926e-4947-9b61-0776ea7a637a" />
-<img width="532" height="667" alt="Detalle2" src="https://github.com/user-attachments/assets/7bbc8200-7e05-49d4-a0be-c43ecae733f8" />
+
 Inscribir Nuevo Guerrero
-<img width="532" height="667" alt="Detalle2" src="https://github.com/user-attachments/assets/7bbc8200-7e05-49d4-a0be-c43ecae733f8" />
 <img width="1917" height="1078" alt="Formulario2" src="https://github.com/user-attachments/assets/d996628b-3db9-4b1f-9315-4a5634171791" />
+<img width="532" height="667" alt="Detalle2" src="https://github.com/user-attachments/assets/7bbc8200-7e05-49d4-a0be-c43ecae733f8" />
 
 🛠️ Tecnologías utilizadas
 TecnologíaUsoC#Lenguaje principalASP.NET CoreFramework webMVCPatrón de arquitecturaRazor Views (.cshtml)Vistas del lado del servidorBootstrap 5Estilos y diseño responsivoHTML / CSSMaquetación y estilos personalizadosGit + GitHubControl de versiones
