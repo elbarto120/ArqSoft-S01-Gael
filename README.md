@@ -11,7 +11,7 @@ Detalle de Personaje
 <img width="1912" height="1062" alt="Detalle1" src="https://github.com/user-attachments/assets/77c6df44-926e-4947-9b61-0776ea7a637a" />
 <img width="532" height="667" alt="Detalle2" src="https://github.com/user-attachments/assets/7bbc8200-7e05-49d4-a0be-c43ecae733f8" />
 Inscribir Nuevo Guerrero
-<img width="1918" height="1078" alt="Formulario1" src="https://github.com/user-attachments/assets/1d2eb652-e7f7-48d5-834e-3b7b59a84759" />
+<img width="532" height="667" alt="Detalle2" src="https://github.com/user-attachments/assets/7bbc8200-7e05-49d4-a0be-c43ecae733f8" />
 <img width="1917" height="1078" alt="Formulario2" src="https://github.com/user-attachments/assets/d996628b-3db9-4b1f-9315-4a5634171791" />
 
 🛠️ Tecnologías utilizadas
