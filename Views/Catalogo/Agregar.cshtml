@@ -33,16 +33,12 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Nombre del archivo de imagen</label>
-                <input asp-for="ImagenUrl" class="form-control bg-dark text-white border-secondary" placeholder="ejemplo.jpg">
-            </div>
-
-            <div class="mb-3">
                 <label class="form-label">Descripción / Biografía</label>
                 <textarea asp-for="Descripcion" class="form-control bg-dark text-white border-secondary" rows="4"></textarea>
             </div>
 
             <div class="d-grid mt-4">
+                <input type="hidden" asp-for="ImagenUrl" value="Murata.webp" />
                 <button type="submit" class="btn-hero" style="font-size: 1.2rem;">[ CONFIRMAR INSCRIPCIÓN ]</button>
             </div>
         </form>
