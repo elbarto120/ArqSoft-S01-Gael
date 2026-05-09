@@ -4,9 +4,11 @@ Aplicación web temática de Demon Slayer: Kimetsu no Yaiba desarrollada en ASP.
 🖼️ Capturas de pantalla
 Página de Inicio
 <img width="1917" height="1078" alt="Inicio" src="https://github.com/user-attachments/assets/176e56f2-fab6-4cc8-82cb-711a2f3e789b" />
+
 Registro de Personajes
 <img width="1917" height="1078" alt="Catalogo1" src="https://github.com/user-attachments/assets/0165b243-3443-4189-bead-3fe6a47393f0" />
 <img width="1918" height="1078" alt="Catalogo2" src="https://github.com/user-attachments/assets/78bfaeac-adc8-4f20-9f4c-9d1eed2abb24" />
+
 Detalle de Personaje
 <img width="1912" height="1062" alt="Detalle1" src="https://github.com/user-attachments/assets/77c6df44-926e-4947-9b61-0776ea7a637a" />
 
@@ -57,3 +59,7 @@ Catalogo2/
 
 👤 Autor
 Gael — Proyecto desarrollado para el curso de Arquitectura de Software.
+
+## 🤖 Uso de Inteligencia Artificial
+
+Este proyecto fue desarrollado con apoyo de **Claude** (Anthropic) como asistente de IA. Se utilizó para ayudar en la escritura y corrección del código fuente, incluyendo vistas Razor, controladores y configuración del proyecto.
